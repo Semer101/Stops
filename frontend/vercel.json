@@ -2,5 +2,8 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": ".next"
+  "outputDirectory": ".next",
+  "env": {
+    "NEXT_PUBLIC_API_BASE_URL": "https://stops-api-production-b556.up.railway.app"
+  }
 }

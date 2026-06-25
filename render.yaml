@@ -15,7 +15,7 @@ services:
       - key: DATABASE_URL
         value: postgresql://neondb_owner:npg_qPHwdTFgQ51B@ep-wild-frog-atw84xqy-pooler.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
       - key: JWT_SECRET
-        sync: false
+        value: stops_jwt_secret_2026_secure_key_for_production_use_change_in_real_deployment
       - key: JWT_TTL_MINUTES
         value: 60
       - key: CORS_ALLOWED_ORIGIN
