@@ -204,8 +204,8 @@ export default function Map({
   }, [userLocation, selectedStop, walkingRoute]);
 
   return (
-    <div className="h-full w-full relative z-0">
-      <div ref={mapContainerRef} className="h-full w-full" />
+    <div className="h-full w-full relative z-0 min-h-[400px]">
+      <div ref={mapContainerRef} className="h-full w-full min-h-[400px]" style={{ height: '100%', minHeight: '400px' }} />
     </div>
   );
 }
