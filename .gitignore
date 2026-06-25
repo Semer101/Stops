@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+*.tsbuildinfo
+
+# Go
+backend/bin/
+backend/tmp/
+.gocache/
+.gomodcache/
+*.exe
+*.test
+*.out
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

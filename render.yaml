@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: stops-api
+    runtime: docker
+    rootDir: backend
+    plan: free
+    dockerfilePath: ./Dockerfile
+    preDeployCommand: stops-migrate
+    healthCheckPath: /api/health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: PORT
+        value: 8080
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_TTL_MINUTES
+        value: 60
+      - key: CORS_ALLOWED_ORIGIN
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false

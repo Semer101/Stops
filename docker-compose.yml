@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: stops-db
+    environment:
+      POSTGRES_DB: stops
+      POSTGRES_USER: stops
+      POSTGRES_PASSWORD: stops
+    ports:
+      - "5433:5432"
+    volumes:
+      - stops_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stops -d stops"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  stops_postgres_data:
