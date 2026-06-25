@@ -19,6 +19,6 @@ services:
       - key: JWT_TTL_MINUTES
         value: 60
       - key: CORS_ALLOWED_ORIGIN
-        value: https://stops-frontend.vercel.app
+        value: https://stops-39jyG8nn.vercel.app
       - key: GEMINI_API_KEY
         sync: false
