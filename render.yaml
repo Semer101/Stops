@@ -13,12 +13,12 @@ services:
       - key: PORT
         value: 8080
       - key: DATABASE_URL
-        sync: false
+        value: postgresql://neondb_owner:npg_qPHwdTFgQ51B@ep-wild-frog-atw84xqy-pooler.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
       - key: JWT_SECRET
         sync: false
       - key: JWT_TTL_MINUTES
         value: 60
       - key: CORS_ALLOWED_ORIGIN
-        sync: false
+        value: https://stops-frontend.vercel.app
       - key: GEMINI_API_KEY
         sync: false
